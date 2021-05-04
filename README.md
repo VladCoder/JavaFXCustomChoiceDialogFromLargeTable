@@ -13,22 +13,17 @@ It's how dialog looks like:
 To invoke the dialog you can with double click on any value within Product column.
 Dialog also allow you to filter rows with some string.
 
-Project structure:
-ru.vlsoft.controllers
-  MainFormController - controller of the main form, which contain table with some simple data
+Project structure:\
+ru.vlsoft.controllers.MainFormController - controller of the main form, which contain table with some simple data\
   
-ru.vlsoft.models
-  BaseObject - abstract class, base for other models (entities)
-  Country
-  Product
-  TableDetails - model for simulating, for example, lines of the sales receipt
+ru.vlsoft.models.BaseObject - abstract class, base for other models (entities)\
+ru.vlsoft.models.Country
+ru.vlsoft.models.Product
+ru.vlsoft.models.TableDetails - model for simulating, for example, lines of the sales receipt\
   
-ru.vlsoft.table_cells
-  ProductTableCell - extends TableCell
+ru.vlsoft.table_cells.ProductTableCell - extends TableCell\
   
-ru.vlsoft.view_models
-  ProductListViewModel - used for creating choice dialog content with tableView and textField for filter
+ru.vlsoft.view_models.ProductListViewModel - used for creating choice dialog content with tableView and textField for filter\
   
-ru.vlsoft
-  GeneralUtils - utilite-class, for data generating
-  MainClass - class with main method
+ru.vlsoft.GeneralUtils - utilite-class, for data generating\
+ru.vlsoft.MainClass - class with main method\
