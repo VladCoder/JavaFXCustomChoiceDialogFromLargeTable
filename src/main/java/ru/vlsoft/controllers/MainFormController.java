@@ -34,6 +34,7 @@ public class MainFormController {
 
         tableView.getColumns().clear();
         tableView.setItems(FXCollections.observableList(details));
+        tableView.setEditable(true);
 
         {
             TableColumn<TableDetails, Product> column = new TableColumn<>("Product");
