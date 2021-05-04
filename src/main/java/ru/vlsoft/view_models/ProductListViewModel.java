@@ -7,8 +7,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import ru.vlsoft.GeneralUtils;
 import ru.vlsoft.models.Product;
@@ -78,7 +76,7 @@ public class ProductListViewModel {
         layout.getChildren().add(tableView);
         layout.getChildren().add(textField);
         layout.setOnKeyReleased(handler -> {
-            if(handler.getCode().isNavigationKey()) {
+            if (handler.getCode().isNavigationKey()) {
                 Platform.runLater(tableView::requestFocus);
             }
         });

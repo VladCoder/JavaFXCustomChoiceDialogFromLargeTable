@@ -17,14 +17,14 @@ public class GeneralUtils {
     public static List<TableDetails> details;
 
     static {
-        countries = IntStream.rangeClosed(1, 5).mapToObj(i -> {
+        countries = IntStream.rangeClosed(1, 50).mapToObj(i -> {
             Country element = new Country();
             element.setName("Country " + i);
             element.setCode(i);
             return element;
         }).collect(Collectors.toList());
 
-        products = IntStream.rangeClosed(1, 10).mapToObj(i -> {
+        products = IntStream.rangeClosed(1, 2000).mapToObj(i -> {
             Product element = new Product();
             element.setName("Product " + i);
             element.setPrice((double) i * 10);
